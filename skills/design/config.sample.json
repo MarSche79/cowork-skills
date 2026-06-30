@@ -1,0 +1,39 @@
+{
+  "azureFoundry": {
+    "endpoint": "https://<YOUR-RESOURCE>.cognitiveservices.azure.com/",
+    "tenantId": "<YOUR-TENANT-ID>",
+    "subscriptionId": "<YOUR-SUBSCRIPTION-ID>",
+    "subscriptionName": "<HUMAN-READABLE-SUB-NAME>",
+    "resourceGroup": "<YOUR-RG>",
+    "resourceName": "<YOUR-RESOURCE-NAME>",
+    "projectName": null,
+    "region": "<YOUR-REGION>",
+    "authMode": "azure-cli",
+    "apiVersion": "2024-10-21"
+  },
+  "designTeamModels": {
+    "creativeDirector": "<DEPLOYMENT-NAME>",
+    "researcher": "<DEPLOYMENT-NAME>",
+    "promptEngineer": "<DEPLOYMENT-NAME>",
+    "critic": "<DEPLOYMENT-NAME>",
+    "producer": "<DEPLOYMENT-NAME>",
+    "imageGenerator": null
+  },
+  "fallbacks": {
+    "creativeDirector": "<FALLBACK-DEPLOYMENT>",
+    "researcher": "<FALLBACK-DEPLOYMENT>",
+    "promptEngineer": "<FALLBACK-DEPLOYMENT>",
+    "critic": "<FALLBACK-DEPLOYMENT>",
+    "producer": "<FALLBACK-DEPLOYMENT>",
+    "imageGenerator": null
+  },
+  "mode": "balanced | premium | fast | prompt-only | custom",
+  "imageGeneration": {
+    "enabled": false,
+    "reason": "No image deployment available. Skill produces prompts only.",
+    "promptOnlyFallback": true
+  },
+  "outputRoot": "<ABSOLUTE-PATH-TO-OUTPUT-FOLDER>"
+}
+
+
